@@ -14,11 +14,86 @@ with Register and Login Functionality.
 - **Others**: Mongoose (for MongoDB object modeling)
 
 ---
-### Backend Deployed URL Endpoint
+### Backend Deployed(Render) URL  Endpoint
 To be used in Frontend replace your localhost url in frontend(client) code with this Provided Live URL for full functioning of the Application.
 ```bash
 https://bookstore-backend-d4ac.onrender.com
 ```
+
+# Testing User Endpoints with Postman
+
+Follow the steps below to test the user-related endpoints:
+
+---
+
+## 1. Register a New User
+
+**Endpoint:**  
+`POST /users/register`
+```bash
+localhost:5000/users/register
+```
+
+**Request Body:**
+
+```json
+{
+  "username": "exampleUser",
+  "email": "user@example.com",
+  "password": "securePassword123",
+  "password2": "securePassword123"
+}
+```
+## 2.  Log In as the Registered User
+
+**Endpoint:**  
+`POST /users/login`
+```bash
+localhost:5000/users/login
+```
+
+**Request Body:**
+
+```json
+{
+  "email": "user@example.com",
+  "password": "securePassword123"
+}
+```
+**Expected Response:**
+```json
+{
+  "success": true,
+  "token": "Bearer <your_generated_jwt_token>"
+}
+```
+## 3. Get User Profile
+
+**Endpoint:**  
+`GET /users/profile/<user_id>`
+```bash
+localhost:5000/users/profile/673c909c17407306243ec088
+```
+
+**Expected Response:**
+
+```json
+{
+  "_id": "673c909c17407306243ec088",
+  "username": "exampleUser",
+  "email": "user@example.com",
+  "password": "$2a$10$7eQA7y5OQZAX0hye2Vuo4e2v1OpXNRNa9RgIpzS0ALq2JWh39lArW",
+  "bio": "",
+  "image": {
+    "data": [],
+    "contentType": ""
+  },
+  "books": [],
+  "__v": 0
+}
+
+```
+
 
 
 https://github.com/user-attachments/assets/18a7b463-c6e6-4274-99c7-188dba042439
