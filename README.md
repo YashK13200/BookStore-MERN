@@ -1,6 +1,9 @@
 # BookStore
 
 A book sharing web app built with the MERN (MondoDB, Express, React, Node) stack!
+a simple web application that allows users to view, add, and delete books. The application have both frontend and backend functionality
+with Register and Login Functionality.
+
 
 ## Technologies Used
 
