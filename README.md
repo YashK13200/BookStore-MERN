@@ -2,12 +2,74 @@
 
 A book sharing web app built with the MERN (MondoDB, Express, React, Node) stack!
 
+## Technologies Used
 
-## Getting started
+- **Frontend**: React.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **HTTP Client**: Axios
+- **Others**: Mongoose (for MongoDB object modeling)
 
-### Clone the repo
-`git clone https://github.com//BookStore.git`</br>
-`cd Bookstagram`
+---
+
+## Setup Instructions
+
+Follow these steps to set up and run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YashK13200/BookStore-MERN.git
+cd contact-management
+```
+
+### 2. Backend Setup (Node.js)
+Navigate to the backend folder:
+
+ ```bash
+   cd Backend
+   ```
+Install dependencies:
+ ```bash
+   npm install
+   ```
+
+Create a .env file in the backend directory and add the following configuration:
+ ```bash
+   MONGODB_URI=mongodb://localhost:27017/contacts
+   PORT=5000
+   ```
+Replace mongodb://localhost:27017/contacts with your actual MongoDB connection string.
+
+Start the backend server:
+ ```bash
+   npm node server.js
+   or  simply nodemon
+   or  npm run server
+
+   ```
+localhost:5000
+
+### 3. Frontend Setup (React)
+Navigate to the client folder:
+ ```bash
+ cd frontend
+ npm install
+   ```
+Start the frontend development server:
+ ```bash
+ npm run client
+   ```
+This will start the frontend on http://localhost:5171.
+
+### 4. Database Setup
+You need a MongoDB database to store the contacts. You can either:
+
+Use a local MongoDB instance, or
+Use a cloud MongoDB service like MongoDB Atlas.
+If you're using a local MongoDB instance, make sure it's running on localhost:27017 (or update the .env file accordingly).
+
+Once the server is running, the database schema will be automatically created when the application first interacts with the database.
 
 ## File Structure
 
