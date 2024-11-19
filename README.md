@@ -11,6 +11,26 @@ A book sharing web app built with the MERN (MondoDB, Express, React, Node) stack
 - **Others**: Mongoose (for MongoDB object modeling)
 
 ---
+### Backend Deployed URL Endpoint
+To be used in Frontend replace your localhost url in frontend(client) code with this Provided Live URL for full functioning of the Application.
+```bash
+https://bookstore-backend-d4ac.onrender.com
+```
+
+
+https://github.com/user-attachments/assets/18a7b463-c6e6-4274-99c7-188dba042439
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Setup Instructions
 
@@ -20,14 +40,14 @@ Follow these steps to set up and run the project locally:
 
 ```bash
 git clone https://github.com/YashK13200/BookStore-MERN.git
-cd contact-management
+cd Bookstagram
 ```
 
 ### 2. Backend Setup (Node.js)
 Navigate to the backend folder:
 
  ```bash
-   cd Backend
+   cd backend
    ```
 Install dependencies:
  ```bash
@@ -53,7 +73,7 @@ localhost:5000
 ### 3. Frontend Setup (React)
 Navigate to the client folder:
  ```bash
- cd frontend
+ cd client
  npm install
    ```
 Start the frontend development server:
